@@ -56,11 +56,11 @@ I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: num
 | 25  | JIMP, H/Dj=6   | 70,000| 2D | SSTLMCD+VC | Yes | - | No | Yes |
 | 26  | JIMP, H/Dj=1   | 100,000| 2D | SSTLMCD+VC | Yes | - | Yes | Yes |
 | 27  | JIMP, H/Dj=5   | 100,000| 2D | SSTLMCD+VC | Yes | - | Yes | Yes |
-| 24  | JIMP-C, H/Dj=2 | 23,000 | 2D | SSTLMCD+VC | Yes | - | No | Yes |
-| 24  | FPNA, theta=0   | 300,000| 2D | SSTLMCD | No | - | Yes | No |
-| 25  | FPNA, theta=10   | 300,000| 2D | SSTLMCD | No | - | Yes | No |
-| 25  | JF   | - | 2D | laminar | No | - | Yes | No |
-| 25  | Channel flow   | - | 3D | WALE | Yes | - | No | No |
+| 28  | JIMP-C, H/Dj=2 | 23,000 | 2D | SSTLMCD+VC | Yes | - | No | Yes |
+| 29  | FPNA, theta=0   | 300,000| 2D | SSTLMCD | No | - | Yes | No |
+| 30  | FPNA, theta=10   | 300,000| 2D | SSTLMCD | No | - | Yes | No |
+| 31  | JF   | - | 2D | laminar | No | - | Yes | No |
+| 32  | Channel flow   | - | 3D | WALE | Yes | - | No | No |
 
 
 **Geometries** <br>
@@ -68,3 +68,11 @@ I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: num
 
 
 <h2><strong>Data portions in different cases</strong></h2>
+<img width="721" height="520" alt="percentages" src="https://github.com/user-attachments/assets/1a213b47-e441-4ed0-88d0-0bbb6586f571" />
+
+
+
+
+
+
+
