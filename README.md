@@ -16,9 +16,9 @@ the previous training set is continually used as the training data. These old tr
 
 **New features**: To enhancing the performance of the SST-ML model in predicting the complex flow physics related to the flow past a cylinder, we newly add the additional jet impingement flows, the flows past the cylinder (FPC), the high-speed flows over the NACA0012 airfoil (FPNA), channel flow, and the jet flow in a Laval nozzle (JF).
 
-I: Case item; Re: Reynolds number; Dim.: dimension; Ref.: reference model; Exp.: experiment; Num.: numerical simulation results
+I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: numerical simulation results
 | I  | Cases        | Re    | Dim.| Reference model | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
-| :--- | :---:      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
+| :--- | :---      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
 | 1  | T3A          | 5,281 | 2D | SSTLM     | No | - | No | No |
 | 2  | T3A-         | 4,694 | 2D | SSTLM     | No | - | No | No |
 | 3  | T3A2-        | 7,726 | 2D | SSTLM     | No | - | No | No |
@@ -33,3 +33,27 @@ I: Case item; Re: Reynolds number; Dim.: dimension; Ref.: reference model; Exp.:
 | 12 | JIMP, H/Dj=1 | 30,000| 2D | SSTLMCD+VC| Yes | - | Yes | Yes |
 | 13 | SW           |280,000| 3D | SSTCC     | Yes | - | No | No |
 | 14 | PitzDaily    | 25,400| 2D | WALE      | No  | - | No | No |
+
+Updated cases in this version:
+
+| I  | Cases        | Re    | Dim.| Reference model | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
+| :--- | :---      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
+| 15  | FPC         | 100   | 3D  | WALE     | Yes | - | No | No |
+| 16  | FPC         | 390   | 2D* | WALE     | Yes | - | No | No |
+| 17  | FPC         | 3,900 | 2D  | SSTIDDES | No  | -  | No | No |
+| 18  | FPC         | 3,900 | 2D* | WALE     | Yes | -  | No | No |
+| 19  | FPC         | 9,000 | 2D* | WALE     | Yes | - | No | No |
+| 20  | FPC         | 9,000 | 3D  | WALE     | Yes | - | No | No |
+| 21  | JIMP, H/B=2 | 30,000| 2D | SSTCD     | No | - | No | Yes |
+| 22  | JIMP, H/B=6 | 11,000| 2D | SSTCD     | No | - | No | Yes |
+| 23  | JIMP, H/B=7    | 20,000| 2D | SSTLMCD   | No | - | No | Yes |
+| 24  | JIMP, H/Dj=4   | 23,000| 2D | SSTLMCD+VC | Yes | - | No | Yes |
+| 25  | JIMP, H/Dj=6   | 70,000| 2D | SSTLMCD+VC | Yes | - | No | Yes |
+| 26  | JIMP, H/Dj=1   | 100,000| 2D | SSTLMCD+VC | Yes | - | Yes | Yes |
+| 27  | JIMP, H/Dj=5   | 100,000| 2D | SSTLMCD+VC | Yes | - | Yes | Yes |
+| 24  | JIMP-C, H/Dj=2 | 23,000 | 2D | SSTLMCD+VC | Yes | - | No | Yes |
+| 24  | FPNA, theta=0   | 300,000| 2D | SSTLMCD | No | - | Yes | No |
+| 25  | FPNA, theta=10   | 300,000| 2D | SSTLMCD | No | - | Yes | No |
+| 25  | JF   | - | 2D | laminar | No | - | Yes | No |
+| 25  | Channel flow   | - | 3D | WALE | Yes | - | No | No |
+
