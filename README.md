@@ -18,7 +18,12 @@ the previous training set is continually used as the training data. These old tr
 
 I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: numerical simulation results <br>
 SSTLM: Shear stress transport (SST) model with laminar-turbulence transition proposed by Smirnov and Menter (2009). <br>
-SSTCD: SST model with the cross-diffusion correction proposed by Huang et al. (2019).
+SSTCD: SST model with the cross-diffusion correction proposed by Huang et al. (2019). <br>
+SSTLMCD: SSTLM model with the cross-diffusion correction proposed by Huang et al. (2025) <br>
+VC: Vortex streching correction <br>
+SSTCC: SST model with curvature correction <br>
+WALE: <br>
+
 | I  | Cases        | Re    | Dim.| Reference model | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
 | :--- | :---      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
 | 1  | T3A          | 5,281 | 2D | SSTLM     | No | - | No | No |
@@ -26,7 +31,7 @@ SSTCD: SST model with the cross-diffusion correction proposed by Huang et al. (2
 | 3  | T3A2-        | 7,726 | 2D | SSTLM     | No | - | No | No |
 | 4  | T3B-         | 9,780 | 2D | SSTLM     | No | - | No | No |
 | 5  | JIMP, H/B=2  | 11,400| 2D | SSTCD     | No | - | No | Yes |
-| 6  | JIMP, H/B=4  | 20,000| 2D | SSTCDLM   | No | - | No | Yes |
+| 6  | JIMP, H/B=4  | 20,000| 2D | SSTLMCD   | No | - | No | Yes |
 | 7  | JIMP, H/B=9.2| 20,000| 2D | SSTCD     | No | - | No | Yes |
 | 8  | JIMP, H/Dj=2 | 23,000| 2D | SSTLMCD+VC| Yes | - | No | Yes |
 | 9  | JIMP, H/Dj=7 | 23,000| 2D | SSTLMCD+VC| Yes | - | No | Yes |
@@ -78,7 +83,7 @@ SSTCD: SST model with the cross-diffusion correction proposed by Huang et al. (2
 
 <h2><strong>(3) Validation</strong></h2>
 | I  | Cases        | Re    | Dim.| Reference model |
-| :--- | :---      | ---: | ---: | ---: |
+| :--- | :---      | :--- | :--- | :--- |
 | 1  | JIMP, H/Dj=6 | 23,000 | 2D | SSTLMCD+VC |
 | 2  | FPC          | 120    | 2D | WALE       |
 | 3  | FPC          | 2,000  | 2D | SSTIDDES or WALE |
