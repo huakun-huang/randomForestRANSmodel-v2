@@ -8,3 +8,6 @@ Huakun Huang, Qingmo Xie, Tai'an Hu, Huan Hu, Peng Yu, A random forest machine l
 Now, The present study aims to address challenging problems concerning 
 the representation of 3D instabilities within 2D simulations. 
 Therefroe, this update includes the important features for the above purpose.
+
+
+<h2><strong>Train cases</strong></h2>
