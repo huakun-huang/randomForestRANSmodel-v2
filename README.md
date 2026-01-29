@@ -5,12 +5,12 @@ In our previous work, we presented a machine learning model for complex flows. <
 Huakun Huang, Qingmo Xie, Tai'an Hu, Huan Hu, Peng Yu, A random forest machine learning in turbulence closure modeling for complex flows and heat transfer based on the non-equilibrium turbulence assumption, Journal of Computational Physics, 2025, 533, 113995, doi: 10.1016/j.jcp.2025.113995 <br>
 
 
-Now, The present study aims to address challenging problems concerning 
+Now, the present study aims to address challenging problems concerning 
 the representation of 3D instabilities within 2D simulations. 
 Therefroe, this update includes the important features for the above purpose.
 
 
-<h2><strong>Cases used in the training process</strong></h2>
+<h2><strong>(1) Cases used in the training process</strong></h2>
 the previous training set is continually used as the training data. These old training cases are the 3D swirling pipe flows (SW), jet impingement (JIMP), zero-pressure-gradient flat plate flows (T3A/B), and backward-facing step (PitzDaily). It is worth stressing that for round jet impingement flows (Series for H/Dj cases, where H is the impinging distance and Dj is the nozzle diameter), they are the 2D axisymmetric. Therefore, the vortex stretching can occur, while this flow physics vanishes in the plane jet impingement (Series for H/B cases). <br>
 
 
@@ -67,14 +67,21 @@ I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: num
 <img width="952" height="176" alt="ML-geometry" src="https://github.com/user-attachments/assets/5285a58e-0a8e-4548-8264-28f696d36f53" />
 
 
-<h2><strong>Data portions in different cases</strong></h2>
+<h2><strong>(2) Data portions in different cases</strong></h2>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1a213b47-e441-4ed0-88d0-0bbb6586f571" width="45%"  />
   <img src="https://github.com/user-attachments/assets/ce06f2f8-89f5-423e-bb27-d70c4626f775" width="45%" alt="ML" />
 </p>
 
 
+<h2><strong>(3) Validation</strong></h2>
+| I  | Cases        | Re    | Dim.| Reference model |
+| :--- | :---      | ---: | ---: | ---: |
+| 1  | JIMP, H/Dj=6 | 23,000 | 2D | SSTLMCD+VC |
+| 2  | FPC          | 120    | 2D | WALE       |
+| 3  | FPC          | 2,000  | 2D | SSTIDDES or WALE |
+| 4  | FPC          | 15,000 | 2D | WALE       |
 
-
+**JIMP** <br>
 
 
