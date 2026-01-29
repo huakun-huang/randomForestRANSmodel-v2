@@ -10,4 +10,8 @@ the representation of 3D instabilities within 2D simulations.
 Therefroe, this update includes the important features for the above purpose.
 
 
-<h2><strong>Train cases</strong></h2>
+<h2><strong>Cases used in the training process</strong></h2>
+the previous training set is continually used as the training data. These old training cases are the 3D swirling pipe flows (SW), jet impingement (JIMP), zero-pressure-gradient flat plate flows (T3A/B), and backward-facing step (PitzDaily), as listed in Table \ref{tab:oldCases}. It is worth stressing that for round jet impingement flows (Series for $H/D_j$ cases, where $H$ is the impinging distance and $D_j$ is the nozzle diameter), they are the 2D axisymmetric, indicating that $\chi$ is not zero. Therefore, the vortex stretching can occur, while this flow physics vanishes in the plane jet impingement (Series for $H/B$ cases). 
+
+
+\textbf{New features}: To enhancing the performance of the SST-ML model in predicting the complex flow physics related to the flow past a cylinder, we newly add the additional jet impingement flows, the flows past the cylinder (FPC), the high-speed flows over the NACA0012 airfoil (FPNA), channel flow, and the jet flow in a Laval nozzle (JF).
