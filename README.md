@@ -17,19 +17,19 @@ the previous training set is continually used as the training data. These old tr
 **New features**: To enhancing the performance of the SST-ML model in predicting the complex flow physics related to the flow past a cylinder, we newly add the additional jet impingement flows, the flows past the cylinder (FPC), the high-speed flows over the NACA0012 airfoil (FPNA), channel flow, and the jet flow in a Laval nozzle (JF).
 
 I: Case item; Re: Reynolds number; Dim.: dimension; Ref.: reference model; Exp.: experiment; Num.: numerical simulation results
-| I  | Cases        | Re    | Dim.| Ref.     | VS | Exp./Num. | 
-| :--- | :---:      | ---:  | ---: | ---:    | ---: | ---: |
-| 1  | T3A          | 5,281 | 2D | SSTLM     | No | - |
-| 2  | T3A-         | 4,694 | 2D | SSTLM     | No | - |
-| 3  | T3A2-        | 7,726 | 2D | SSTLM     | No | - |
-| 4  | T3B-         | 9,780 | 2D | SSTLM     | No | - |
-| 5  | JIMP, H/B=2  | 11,400| 2D | SSTCD     | No | - |
-| 6  | JIMP, H/B=4  | 20,000| 2D | SSTCDLM   | No | - |
-| 7  | JIMP, H/B=9.2| 20,000| 2D | SSTCD     | No | - |
-| 8  | JIMP, H/Dj=2 | 23,000| 2D | SSTLMCD+VC| Yes | - |
-| 9  | JIMP, H/Dj=7 | 23,000| 2D | SSTLMCD+VC| Yes | - |
-| 10 | JIMP, H/Dj=10| 23,000| 2D | SSTLMCD+VC| Yes | - |
-| 11 | JIMP, H/Dj=14| 23,000| 2D | SSTLMCD+VC| Yes | - |
-| 12 | JIMP, H/Dj=1 | 30,000| 2D | SSTLMCD+VC| Yes | - |
-| 13 | SW           |280,000| 3D | SSTCC     | Yes | - |
-| 14 | PitzDaily    | 25,400| 2D | WALE      | No  | - |
+| I  | Cases        | Re    | Dim.| Ref.     | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
+| :--- | :---:      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
+| 1  | T3A          | 5,281 | 2D | SSTLM     | No | - | No | No |
+| 2  | T3A-         | 4,694 | 2D | SSTLM     | No | - | No | No |
+| 3  | T3A2-        | 7,726 | 2D | SSTLM     | No | - | No | No |
+| 4  | T3B-         | 9,780 | 2D | SSTLM     | No | - | No | No |
+| 5  | JIMP, H/B=2  | 11,400| 2D | SSTCD     | No | - | No | Yes |
+| 6  | JIMP, H/B=4  | 20,000| 2D | SSTCDLM   | No | - | No | Yes |
+| 7  | JIMP, H/B=9.2| 20,000| 2D | SSTCD     | No | - | No | Yes |
+| 8  | JIMP, H/Dj=2 | 23,000| 2D | SSTLMCD+VC| Yes | - | No | Yes |
+| 9  | JIMP, H/Dj=7 | 23,000| 2D | SSTLMCD+VC| Yes | - | No | Yes |
+| 10 | JIMP, H/Dj=10| 23,000| 2D | SSTLMCD+VC| Yes | - | No | Yes |
+| 11 | JIMP, H/Dj=14| 23,000| 2D | SSTLMCD+VC| Yes | - | No | Yes |
+| 12 | JIMP, H/Dj=1 | 30,000| 2D | SSTLMCD+VC| Yes | - | Yes | Yes |
+| 13 | SW           |280,000| 3D | SSTCC     | Yes | - | No | No |
+| 14 | PitzDaily    | 25,400| 2D | WALE      | No  | - | No | No |
