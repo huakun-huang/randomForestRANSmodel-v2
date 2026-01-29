@@ -17,7 +17,7 @@ the previous training set is continually used as the training data. These old tr
 **New features**: To enhancing the performance of the SST-ML model in predicting the complex flow physics related to the flow past a cylinder, we newly add the additional jet impingement flows, the flows past the cylinder (FPC), the high-speed flows over the NACA0012 airfoil (FPNA), channel flow, and the jet flow in a Laval nozzle (JF).
 
 I: Case item; Re: Reynolds number; Dim.: dimension; Ref.: reference model; Exp.: experiment; Num.: numerical simulation results
-| I  | Cases        | Re    | Dim.| Ref.     | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
+| I  | Cases        | Re    | Dim.| Reference model | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
 | :--- | :---:      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
 | 1  | T3A          | 5,281 | 2D | SSTLM     | No | - | No | No |
 | 2  | T3A-         | 4,694 | 2D | SSTLM     | No | - | No | No |
