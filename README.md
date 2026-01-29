@@ -34,8 +34,8 @@ I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: num
 | 13 | SW           |280,000| 3D | SSTCC     | Yes | - | No | No |
 | 14 | PitzDaily    | 25,400| 2D | WALE      | No  | - | No | No |
 
-<br>
-**Geometries** <br>
+
+**Geometries** 
 <img width="683" height="368" alt="Old" src="https://github.com/user-attachments/assets/13f7fa78-0de6-4841-993a-f4049f3bdd5f" />
 
 
@@ -62,7 +62,8 @@ I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: num
 | 25  | JF   | - | 2D | laminar | No | - | Yes | No |
 | 25  | Channel flow   | - | 3D | WALE | Yes | - | No | No |
 
-<h2><strong>Geometries and boundary conditions for training cases</strong></h2>
+
+**Geometries** 
 <img width="952" height="176" alt="ML-geometry" src="https://github.com/user-attachments/assets/5285a58e-0a8e-4548-8264-28f696d36f53" />
 
 
