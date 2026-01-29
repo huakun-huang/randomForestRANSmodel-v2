@@ -70,8 +70,8 @@ I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: num
 <h2><strong>Data portions in different cases</strong></h2>
 | data portions | flow type |
 |:---:|:---:|
-|<img alt="percentages" src="https://github.com/user-attachments/assets/1a213b47-e441-4ed0-88d0-0bbb6586f571" width="60%" />| 
-<img alt="pie" src="https://github.com/user-attachments/assets/f3918719-9589-42bc-b3c9-2f6517e2d95d" width="60%" /> |
+|<img src="https://github.com/user-attachments/assets/1a213b47-e441-4ed0-88d0-0bbb6586f571" width="60%" >| 
+<img src="https://github.com/user-attachments/assets/f3918719-9589-42bc-b3c9-2f6517e2d95d" width="60%" > |
 
 
 
