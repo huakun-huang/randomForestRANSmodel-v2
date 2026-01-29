@@ -69,8 +69,8 @@ I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: num
 
 <h2><strong>Data portions in different cases</strong></h2>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1a213b47-e441-4ed0-88d0-0bbb6586f571" width="30%"  />
-  <img src="https://github.com/user-attachments/assets/ce06f2f8-89f5-423e-bb27-d70c4626f775" width="30%" alt="ML" />
+  <img src="https://github.com/user-attachments/assets/1a213b47-e441-4ed0-88d0-0bbb6586f571" width="45%"  />
+  <img src="https://github.com/user-attachments/assets/ce06f2f8-89f5-423e-bb27-d70c4626f775" width="45%" alt="ML" />
 </p>
 
 
