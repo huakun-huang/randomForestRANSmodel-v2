@@ -16,7 +16,9 @@ the previous training set is continually used as the training data. These old tr
 
 **New features**: To enhancing the performance of the SST-ML model in predicting the complex flow physics related to the flow past a cylinder, we newly add the additional jet impingement flows, the flows past the cylinder (FPC), the high-speed flows over the NACA0012 airfoil (FPNA), channel flow, and the jet flow in a Laval nozzle (JF).
 
-I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: numerical simulation results
+I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: numerical simulation results <br>
+SSTLM: Shear stress transport (SST) model with laminar-turbulence transition proposed by Smirnov and Menter (2009). <br>
+SSTCD: SST model with the cross-diffusion correction proposed by Huang et al. (2019).
 | I  | Cases        | Re    | Dim.| Reference model | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
 | :--- | :---      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
 | 1  | T3A          | 5,281 | 2D | SSTLM     | No | - | No | No |
