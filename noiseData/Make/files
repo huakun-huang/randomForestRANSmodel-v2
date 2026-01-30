@@ -1,0 +1,3 @@
+noiseData.C
+
+EXE = $(FOAM_APPBIN)/noiseData
