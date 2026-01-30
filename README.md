@@ -92,14 +92,14 @@ WALE: Wall-adapting local eddy-viscosity model<br>
 | 4 | FPC           | 15000 | 2D   | WALE                |
 
 **JIMP** <br>
-<img src="https://github.com/user-attachments/assets/5a23772b-d16a-4010-b2e8-2e8db9fbd0a4" width="100%" />
+<img src="https://github.com/user-attachments/assets/5a23772b-d16a-4010-b2e8-2e8db9fbd0a4" width="80%" />
 
 **Flow past a cylinder** <br>
 (1) Re=3,900 <br>
-<img src="https://github.com/user-attachments/assets/81fdb495-096b-401d-b40f-c1f6db6c6ae2" width="100%" />
+<img src="https://github.com/user-attachments/assets/81fdb495-096b-401d-b40f-c1f6db6c6ae2" width="70%" />
 
 (2) Re=120, 2,000, 3,900, 15,000 <br>
-<img  src="https://github.com/user-attachments/assets/d87121a4-5ed3-4295-876f-c6b15dda7199" width="100%" />
+<img  src="https://github.com/user-attachments/assets/d87121a4-5ed3-4295-876f-c6b15dda7199" width="80%" />
 
 (3) Energy balance (Why we say this method is physics-informed)<br>
 <img src="https://github.com/user-attachments/assets/96cb34a4-0e4c-4d5e-a18f-da0ad0c7302c" width="100%" />
