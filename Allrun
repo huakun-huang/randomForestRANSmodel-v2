@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# 定义文件名和内容
+filename="include/Critical.H"
+content="#define CRITICLE  5"
+
+# 写入内容到文件
+echo "$content" > "$filename"
+
+# 尝试覆盖文件（如果文件存在则覆盖，不存在则创建）
+if ! echo "$content" > "$filename"; then
+    echo "错误：无法写入文件 $filename"
+    exit 1  # 退出脚本，返回非零状态码表示失败
+fi
+
+# 二次验证文件是否生成成功
+if [ ! -f "$filename" ]; then
+    echo "错误：文件 $filename 未生成"
+    exit 1
+fi
+
+echo "文件覆盖成功: $filename , 定义critical"
+
+
+(cd dataRANS && wmake)
+(cd getEnergy && wmake)
+(cd getEnergyExist && wmake)
+(cd getFeaturesURANS && wmake)
+(cd getInit && wmake)
+(cd getInitANN && wmake)
+(cd getInRANS && wmake)
+(cd getLES && wmake)
+(cd getLESF && wmake)
+(cd getURANSEnergy && wmake)
+(cd getURANSInit && wmake)
+(cd getURANSANNInit && wmake)
+(cd LESSolver/neuroPisoFoam && wmake)
+(cd noiseData && wmake)
+(cd noiseDataURANS && wmake)
+#(cd solver && ./Allwmake)
+
+#------------------------------------------------------------------------------
