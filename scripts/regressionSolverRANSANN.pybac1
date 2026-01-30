@@ -1,0 +1,66 @@
+# -*- coding: utf-8 -*-
+
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from sklearn.datasets import fetch_california_housing
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import mean_squared_error
+import optuna
+import os, sys
+from pathlib import Path
+
+sys.path.append('/home/hhk/OpenFOAM/PINNv/include/')
+
+
+# 1. 加载并预处理数据
+def load_data():
+    input = np.loadtxt('inputFeatures.txt')
+    
+    # 标准化数据（对回归任务非常重要）
+    scaler = StandardScaler()
+    X_input = scaler.fit_transform(input)
+
+    return X_input
+
+# 2. 模型加载模块
+def load_model(model_path, custom_objects=None):
+    """
+    通用模型加载函数
+    参数：
+        model_path : 模型文件路径（.h5文件或SavedModel目录）
+        custom_objects : 自定义层/对象的字典（如有）
+    返回：
+        加载的Keras模型
+    """
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"模型文件不存在：{model_path}")
+    
+    # 自动检测格式
+    if model_path.endswith('.h5') or os.path.isdir(model_path):
+        return keras.models.load_model(model_path, custom_objects=custom_objects)
+    else:
+        raise ValueError("不支持的模型格式，应为.h5文件或SavedModel目录")    
+
+
+def predict():
+    X_input = load_data()
+    loaded_model = load_model(
+               "/mnt/d/machineLearningVersion/AutoOptimize-ANN/saved_models/housing_predictor.h5",
+               custom_objects={"mse": mean_squared_error}
+              )
+              
+    #loaded_model.eval()          
+    ResponsesPred = loaded_model.predict(X_input)   
+    with open('outputResult.txt', 'w') as f:
+        for prediction in ResponsesPred:
+                 f.write(" ".join(map(str, prediction.tolist())) + "\n")
+    f.close()
+       
+    print('Machine learning is done')
+   
+
+# [3] run the regression solver
+if __name__ == '__main__':
+    predict()
