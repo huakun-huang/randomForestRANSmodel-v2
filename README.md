@@ -9,12 +9,12 @@ Now, the present study aims to address challenging problems concerning
 the representation of 3D instabilities within 2D simulations. 
 Therefroe, this update includes the important features for the above purpose.
 
-**Build the applications**
-(1) run script Allwmake
-(2) Edit Allrun script. Make sure keyword content is "#define CRITICLE  5".
-(3) Edit the environment. An example is provided in bashrc file
-(4) Run Allrun script
-(5) Compile PINNKOmegaSST model. In PINNKOmegaSST folder, there is a run.sh script. Make sure the path in your computer is correct.
+**Build the applications**  <br>
+(1) run script Allwmake  <br>
+(2) Edit Allrun script. Make sure keyword content is "#define CRITICLE  5".  <br>
+(3) Edit the environment. An example is provided in bashrc file  <br>
+(4) Run Allrun script  <br>
+(5) Compile PINNKOmegaSST model. In PINNKOmegaSST folder, there is a run.sh script. Make sure the path in your computer is correct.  <br>
 
 
 <h2><strong>(1) Cases used in the training process</strong></h2>
