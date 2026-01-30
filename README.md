@@ -17,16 +17,16 @@ the previous training set is continually used as the training data. These old tr
 **New features**: To enhancing the performance of the SST-ML model in predicting the complex flow physics related to the flow past a cylinder, we newly add the additional jet impingement flows, the flows past the cylinder (FPC), the high-speed flows over the NACA0012 airfoil (FPNA), channel flow, and the jet flow in a Laval nozzle (JF).
 
 I: Case item; Re: Reynolds number; Dim.: dimension;  Exp.: experiment; Num.: numerical simulation results <br>
-SSTLM: Shear stress transport (SST) model with laminar-turbulence transition proposed by Smirnov and Menter (2009). <br>
-SSTCD: SST model with the cross-diffusion correction proposed by Huang et al. (2019). <br>
-SSTLMCD: SSTLM model with the cross-diffusion correction proposed by Huang et al. (2025) <br>
-VC: Vortex streching correction <br>
-SSTCC: SST model with curvature correction <br>
-WALE: <br>
+**SSTLM**: Shear stress transport (SST) model with laminar-turbulence transition proposed by [Langtry and Menter (2009)](https://arc.aiaa.org/doi/10.2514/1.42362). <br>
+**SSTCD**: SST model with the cross-diffusion correction proposed by [Huang et al. (2019)](https://www.sciencedirect.com/science/article/pii/S0017931018357302). <br>
+**SSTLMCD**: SSTLM model with the cross-diffusion correction proposed by [Huang et al. (2025)](https://www.sciencedirect.com/science/article/pii/S1359431124025092) <br>
+**VC**: Vortex streching correction, [Huang et al. (2022)](https://www.sciencedirect.com/science/article/pii/S1359431121011339) <br>
+**SSTCC**: SST model with curvature correction proposed by [Smirnov and Menter (2009)](https://asmedigitalcollection.asme.org/turbomachinery/article-abstract/131/4/041010/468836/Sensitization-of-the-SST-Turbulence-Model-to?redirectedFrom=fulltext) <br>
+WALE: Wall-adapting local eddy-viscosity model<br>
 
 | I  | Cases        | Re    | Dim.| Reference model | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
 | :--- | :---      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
-| 1  | T3A          | 5,281 | 2D | SSTLM     | No | - | No | No |
+| 1  | T3A          | 5,281 | 2D | SSTLM     | No | [Savil](https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780444898029500599) | No | No |
 | 2  | T3A-         | 4,694 | 2D | SSTLM     | No | - | No | No |
 | 3  | T3A2-        | 7,726 | 2D | SSTLM     | No | - | No | No |
 | 4  | T3B-         | 9,780 | 2D | SSTLM     | No | - | No | No |
