@@ -1,0 +1,17 @@
+#!/bin/sh
+(cd dataRANS && wclean)
+(cd getEnergy && wclean)
+(cd getEnergyExist && wclean)
+(cd getFeaturesURANS && wclean)
+(cd getInit && wclean)
+(cd getInitANN && wclean)
+(cd getInRANS && wclean)
+(cd getLES && wclean)
+(cd getURANSEnergy && wclean)
+(cd getURANSInit && wclean)
+(cd LESSolver/neuroPisoFoam && wclean)
+(cd noiseData && wclean)
+(cd noiseDataURANS && wclean)
+#(cd solver && ./Allwmake) 
+
+#------------------------------------------------------------------------------
