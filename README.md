@@ -47,7 +47,7 @@ WALE: Wall-adapting local eddy-viscosity model<br>
 
 
 **Updated cases in this version**:
-**SSTIDDES**: AhybridRANS/LES method proposed by [Gritskevich et al. (2012)](https://doi.org/10.1007/s10494-011-9378-4)
+**SSTIDDES**: A hybrid RANS/LES method proposed by [Gritskevich et al. (2012)](https://doi.org/10.1007/s10494-011-9378-4)
 | I  | Cases        | Re    | Dim.| Reference model | Vortex stretching | Exp./Num. | Compressible | Heat transfer |
 | :--- | :---      | ---:  | ---: | ---:    | ---: | ---: | ---: | ---: |
 | 15  | FPC         | 100   | 3D  | WALE     | Yes | [Homann](https://ntrs.nasa.gov/api/citations/19930093896/downloads/19930093896.pdf) | No | No |
@@ -82,12 +82,14 @@ WALE: Wall-adapting local eddy-viscosity model<br>
 
 
 <h2><strong>(3) Validation</strong></h2>
-| I  | Cases        | Re    | Dim.| Reference model |
-| :--- | :---      | :--- | :--- | :--- |
-| 1  | JIMP, H/Dj=6 | 23,000 | 2D | SSTLMCD+VC |
-| 2  | FPC          | 120    | 2D | WALE       |
-| 3  | FPC          | 2,000  | 2D | SSTIDDES or WALE |
-| 4  | FPC          | 15,000 | 2D | WALE       |
+
+
+| I | Cases         | Re    | Dim. | Reference model     |
+|:-:|:--------------|:-----:|:----:|:--------------------|
+| 1 | JIMP, H/Dj=6  | 23000 | 2D   | SSTLMCD+VC          |
+| 2 | FPC           | 120   | 2D   | WALE                |
+| 3 | FPC           | 2000  | 2D   | SSTIDDES or WALE    |
+| 4 | FPC           | 15000 | 2D   | WALE                |
 
 **JIMP** <br>
 
