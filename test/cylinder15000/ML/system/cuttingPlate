@@ -1,0 +1,39 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     |
+    \\  /    A nd           | Web:      www.OpenFOAM.org
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Calculates the gradient of a field.
+
+\*---------------------------------------------------------------------------*/
+
+//sliceMovie
+//{
+    type    surfaces;
+    libs    ("libsampling.so");
+    
+    writeControl      writeTime;
+    surfaceFormat     raw;
+    fields            (UMean);
+    interpolationScheme cellPoint;
+    
+    surfaces
+    {
+        plane
+        {
+            type      cuttingPlane;
+            planeType pointAndNormal;
+            pointAndNormalDict
+            {
+                point    (0 0 0);
+                normal   (0 0 1);
+            }
+            interpolate  true;
+         }
+      };
+//}
+
+// ************************************************************************* //

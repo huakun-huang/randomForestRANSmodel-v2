@@ -1,0 +1,169 @@
+FoamFile
+{
+	version	2.0;
+	class	dictionary;
+	format	ascii; 
+	location	"system"; 
+	object	controlDict; 
+}
+application	pisoFoam; 
+
+startFrom               latestTime;//latestTime;
+
+startTime               0;
+
+stopAt                  endTime;
+
+endTime                 4;
+
+deltaT                  5e-5;
+
+writeControl           runTime;
+
+writeInterval           2e-2;
+
+purgeWrite              200;
+
+timeFormat              general;
+
+timePrecision           6;
+
+writeFormat             ascii;
+
+writePrecision          6;
+
+writeCompression        off;
+
+runTimeModifiable        yes;
+
+adjustTimeStep  yes;
+
+maxCo           0.2;
+
+maxAlphaCo        0;
+functions
+{
+   Forces
+   {
+       type forces;
+	   functionObjectLibs ("libforces.so"); 
+	   patches (cylinder);
+	   log true;
+	   rho rhoInf;
+	   rhoInf 1000;
+	   CofR (0 0 0);
+	   liftDir (0 1 0);
+	   dragDir (1 0 0);
+	   writeControl timeStep;
+	   writeInterval 10;
+   }
+   forceCoeffs
+   {
+       type  forceCoeffs;
+	   functionObjectLibs ("libforces.so");
+	   patches (cylinder);
+	   log true;
+	   rho rhoInf;
+	   rhoInf 1000;
+	   CofR (0 0 0);
+	   liftDir (0 1 0);
+	   dragDir (1 0 0);
+	   pitchAxis (0 0 1);
+	   magUInf 0.3939;
+	   lRef 0.01;
+	   Aref 3.14e-4; //2*R*H
+	   writeControl timeStep;
+	   writeInterval 10;
+   }
+   
+   
+    fieldAverage1
+    {
+        type            fieldAverage;
+        functionObjectLibs ( "libfieldFunctionObjects.so" );
+        enabled         true;
+        //resetOnRestart true;
+        //resetOnOutput false;
+        //startTime  1399;
+        //endTime       1500.0;
+        //  cleanRestart        true;
+        outputControl   writeTime;
+//        outputControl   outputTime;
+        //outputInterval  writeTime;
+        fields
+        (
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                //window      1000;
+                base        time;
+            }
+            Dk
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            Dw
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            Pk
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            Pw
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            phi
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            k
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            omega
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            nut
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+            p
+            {
+                mean        on;
+                prime2Mean  off;
+                //window      1000;
+                base        time;
+            }
+        );
+    }
+    #includeFunc  sets
+	#includeFunc  cuttingPlate
+};
