@@ -1,9 +1,12 @@
-# randomForestRANSmodel-v2
-In our previous work, we presented a machine learning model for complex flows. <br>
+# Physics-Informed ML for 3D Turbulence Effects in 2D RANS Simulations
+*Code repository for the manuscript submitted to **Journal of Fluid Mechanics (Rapids)** <br>
 
+This repository implements a **physics-informed machine learning framework** that recovers three-dimensional turbulent effects (e.g., vortex stretching) in low-cost 2D RANS simulations by learning corrections to the energy budget—**not Reynolds stresses**. The method enables accurate, stable predictions at a fraction of the cost of 3D LES.
 
-Huakun Huang, Qingmo Xie, Tai'an Hu, Huan Hu, Peng Yu, A random forest machine learning in turbulence closure modeling for complex flows and heat transfer based on the non-equilibrium turbulence assumption, Journal of Computational Physics, 2025, 533, 113995, doi: 10.1016/j.jcp.2025.113995 <br>
-
+## 🚀 Quick Start: Try Without Training
+Two pre-configured cases are provided in [`test/`](./test):
+1. **Flow past a cylinder**
+2. **Jet impingement**
 
 Now, the present study aims to address challenging problems concerning 
 the representation of 3D instabilities within 2D simulations. 
@@ -12,8 +15,7 @@ Therefroe, this update includes the important features for the above purpose.
 **Environment**: <br>
 (1) python 3.11.7 <br>
 (2) scikit-learn version 1.2.2 <br>
-(3) OpenFoam-v2312 <br>
-(4) windows-10 WSL <br>
+(3) OpenFoam-v2312 (tested on WSL2/Ubuntu 22.04) <br>
 
 **Build the applications**  <br>
 (1) run script Allwmake  <br>
@@ -21,9 +23,6 @@ Therefroe, this update includes the important features for the above purpose.
 (3) Edit the environment. An example is provided in bashrc file  <br>
 (4) Run Allrun script  <br>
 (5) Compile PINNKOmegaSST model. In PINNKOmegaSST folder, there is a run.sh script. Make sure the path in your computer is correct.  <br>
-
-**Try the method** <br>
-In test folder, two cases are provided. Everyone can try the method without training.
 
 
 <h2><strong>(1) Cases used in the training process</strong></h2>
