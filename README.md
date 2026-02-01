@@ -9,6 +9,13 @@ Now, the present study aims to address challenging problems concerning
 the representation of 3D instabilities within 2D simulations. 
 Therefroe, this update includes the important features for the above purpose.
 
+**Environment**: <br>
+(1) python 3.11.7 <br>
+(2) scikit-learn version 1.2.2 <br>
+(3) OpenFoam-v2312 <br>
+(4) windows-10 WSL <br>
+(5) scikit-learn=1.2.2 <br>
+
 **Build the applications**  <br>
 (1) run script Allwmake  <br>
 (2) Edit Allrun script. Make sure keyword content is "#define CRITICLE  5".  <br>
