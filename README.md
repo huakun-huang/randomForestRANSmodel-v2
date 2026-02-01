@@ -8,10 +8,6 @@ Two pre-configured cases are provided in [`test/`](./test):
 1. **Flow past a cylinder**
 2. **Jet impingement**
 
-Now, the present study aims to address challenging problems concerning 
-the representation of 3D instabilities within 2D simulations. 
-Therefroe, this update includes the important features for the above purpose.
-
 **Environment**: <br>
 (1) python 3.11.7 <br>
 (2) scikit-learn version 1.2.2 <br>
