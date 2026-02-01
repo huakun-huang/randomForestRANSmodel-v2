@@ -1,0 +1,24 @@
+#!/bin/sh
+
+./clean
+
+getInit
+
+rm -rf validate/current_result/*png
+
+decomposePar
+
+mpirun -np 4 buoyantBoussinesqSimpleFoam -parallel | tee log6.txt
+
+reconstructPar -latestTime
+
+postProcess -func cuttingPlate
+
+. /home/hhk/OpenFOAM/OpenFOAM-10/etc/bashrc
+postProcess -func sets
+postProcess -func gradT
+postProcess -func surfaces
+(cd validate && ./graphy && python Nu.py)
+
+rm -rf pro*
+
