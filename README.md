@@ -14,7 +14,6 @@ Therefroe, this update includes the important features for the above purpose.
 (2) scikit-learn version 1.2.2 <br>
 (3) OpenFoam-v2312 <br>
 (4) windows-10 WSL <br>
-(5) scikit-learn=1.2.2 <br>
 
 **Build the applications**  <br>
 (1) run script Allwmake  <br>
