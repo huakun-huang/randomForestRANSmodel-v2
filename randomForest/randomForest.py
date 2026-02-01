@@ -58,12 +58,7 @@ def get_all_directories(path='.'):
     return directories
       
 #load inputFeature and outputFeatures
-skipFolder=['periodicHill', 
-            'cylinder2000-2D-WALE', 
-            'cylinder2000-2D-IDDES',
-            'Impingement_plane_11000_H6'            
-            'Impingement_round_70000_H6',
-            'T3B-'
+skipFolder=['periodicHill'
             ] 
 
 def dataInput(folders):
@@ -208,9 +203,9 @@ score0 = 0.2
 score = 1
 
 #通过理论公式评估随机深林的特征数
-feature = 1 + mt.log(trainFeatures.shape[1], 2)
-print('随机深林理论特征大小：', feature)
-print('缩减特征数到：', testFeatures.shape[1])
+#feature = 1 + mt.log(trainFeatures.shape[1], 2)
+#print('随机深林理论特征大小：', feature)
+#print('缩减特征数到：', testFeatures.shape[1])
 score = miniTrain(trainFeatures,trainResponses,testFeatures,testResponses,score0, 9, 390)
 
 """"
@@ -229,4 +224,5 @@ for n in range(1):
     if(score<0.05):
         break                      
 """            
+
             
