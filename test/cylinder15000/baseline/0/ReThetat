@@ -1,0 +1,53 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2312                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0";
+    object      gammaInt;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+#include "flow.H"
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform $ReTheta;
+
+boundaryField
+{
+    inlet
+    {
+        type            fixedValue;
+        value           uniform $ReTheta;
+    }
+    outlet
+    {
+        type            zeroGradient; 
+    }
+    down
+    {
+        type             symmetry;
+    }
+    up
+    {
+        type             symmetry;
+    }
+    defaultFaces
+    {
+        type            symmetry;
+    }
+    cylinder
+    {
+        type            zeroGradient;
+    }
+}
+
+
+// ************************************************************************* //

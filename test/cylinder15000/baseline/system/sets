@@ -1,0 +1,103 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+FoamFile
+{
+    version         2.0;
+    format          ascii;
+    class           dictionary;
+    location        system;
+    object          sets;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+sets{
+setFormat raw;
+type  sets;
+libs  ("libsampling.so");
+writeControl writeTime;
+fields ( UMean );
+interpolationScheme cellPoint;
+
+sets
+(
+  r6
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.06 -0.05 0.);
+		end   (0.06 0.05 0);
+		nPoints 100;
+	}
+  r7
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.07 -0.05 0.);
+		end   (0.07 0.05 0);
+		nPoints 100;
+	}
+  r10
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.1 -0.05 0);
+		end   (0.1 0.05 0);
+		nPoints 100;
+	}
+  r058
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.0058 -0.05 0);
+		end   (0.0058 0.05 0);
+		nPoints 100;
+	}
+  r106
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.0106 -0.05 0);
+		end   (0.0106 0.05 0);
+		nPoints 100;
+	}
+  r154
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.0154 -0.05 0.);
+		end   (0.0154 0.05 0);
+		nPoints 100;
+	}
+  r202
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.0202 -0.05 0);
+		end   (0.0202 0.05 0);
+		nPoints 100;
+	}
+  center
+	{
+	    type uniform;
+		axis distance;
+		
+		start (0.005 0 0);
+		end   (0.1 0 0);
+		nPoints 100;
+	}
+
+);
+}
