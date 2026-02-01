@@ -22,6 +22,9 @@ Therefroe, this update includes the important features for the above purpose.
 (4) Run Allrun script  <br>
 (5) Compile PINNKOmegaSST model. In PINNKOmegaSST folder, there is a run.sh script. Make sure the path in your computer is correct.  <br>
 
+**Try the method** <br>
+In test folder, two cases are provided. Everyone can try the method without training.
+
 
 <h2><strong>(1) Cases used in the training process</strong></h2>
 the previous training set is continually used as the training data. These old training cases are the 3D swirling pipe flows (SW), jet impingement (JIMP), zero-pressure-gradient flat plate flows (T3A/B), and backward-facing step (PitzDaily). It is worth stressing that for round jet impingement flows (Series for H/Dj cases, where H is the impinging distance and Dj is the nozzle diameter), they are the 2D axisymmetric. Therefore, the vortex stretching can occur, while this flow physics vanishes in the plane jet impingement (Series for H/B cases). <br>
