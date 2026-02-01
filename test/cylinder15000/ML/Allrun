@@ -1,24 +1,10 @@
-#!/bin/sh
+#step 1: Copy the mean flow fields from the baseline
 
-./clean
+# step 2: Run getURANSANNInit
 
-getInit
+decomposePar -force
 
-rm -rf validate/current_result/*png
-
-decomposePar
-
-mpirun -np 4 buoyantBoussinesqSimpleFoam -parallel | tee log6.txt
+mpirun -np 5 pisoFoam -parallel
 
 reconstructPar -latestTime
-
-postProcess -func cuttingPlate
-
-. /home/hhk/OpenFOAM/OpenFOAM-10/etc/bashrc
-postProcess -func sets
-postProcess -func gradT
-postProcess -func surfaces
-(cd validate && ./graphy && python Nu.py)
-
-rm -rf pro*
 
