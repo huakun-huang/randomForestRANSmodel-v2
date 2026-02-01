@@ -1,0 +1,31 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Version:  v2212
+    \\  /    A nd           | Website:  www.openfoam.com
+     \\/     M anipulation  |
+-------------------------------------------------------------------------------
+Description
+    Calculates the pressure field in units M/(LT^2) (e.g. Pa) from kinematic
+    pressure by scaling by a specified density.
+
+\*---------------------------------------------------------------------------*/
+
+pressure1
+{
+    type    pressure;
+    libs    (fieldFunctionObjects);
+    mode    staticCoeff;
+    p       p;
+    U       U;
+    rho     rho;
+    rhoInf  1.1716;
+    pRef    0;
+    hydroStaticMode  none;
+    g       (0  0 0);
+    hRef    0.0;
+    pInf    0.0;
+    Uinf    (0 0 -13.54);
+}
+
+// ************************************************************************* //
