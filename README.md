@@ -118,6 +118,6 @@ WALE: Wall-adapting local eddy-viscosity model<br>
 (4) Solving properties <br>
 <img src="https://github.com/user-attachments/assets/7c096866-c259-496e-ab0f-e85c176f972c" width="100%" />
 
-**Note**: All the above information can be found in our manuscript submited in JFM Rapids
+**Note**: All the above information can be found in our manuscript submitted in JFM Rapids
 
 
