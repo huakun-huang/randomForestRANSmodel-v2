@@ -1,5 +1,5 @@
 # Physics-Informed ML for 3D Turbulence Effects in 2D RANS Simulations
-*Code repository for the manuscript submitted to **Journal of Fluid Mechanics (Rapids)** <br>
+*Code repository for the submitted manuscript<br>
 
 This repository implements a **physics-informed machine learning framework** that recovers three-dimensional turbulent effects (e.g., vortex stretching) in low-cost 2D RANS simulations by learning corrections to the energy budget—**not Reynolds stresses**. The method enables accurate, stable predictions at a fraction of the cost of 3D LES.
 
@@ -117,7 +117,5 @@ WALE: Wall-adapting local eddy-viscosity model<br>
 
 (4) Solving properties <br>
 <img src="https://github.com/user-attachments/assets/7c096866-c259-496e-ab0f-e85c176f972c" width="100%" />
-
-**Note**: All the above information can be found in our manuscript submitted in JFM Rapids
 
 
